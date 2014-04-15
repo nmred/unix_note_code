@@ -1,4 +1,4 @@
-#include "../apue.h"
+#include "apue.h"
 #include <errno.h>
 
 int main(int argc, char *argv[])

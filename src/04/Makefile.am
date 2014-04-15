@@ -1,0 +1,23 @@
+
+INCLUDES = -I $(top_builddir)/include
+bin_PROGRAMS = 4_10 4_1 4_2 4_3 4_4 4_5 4_6 4_7 4_8 4_9
+4_10_SOURCES =4_10.c
+4_10_LDADD = $(top_builddir)/lib/libstderr.la
+4_1_SOURCES =4_1.c
+4_1_LDADD = $(top_builddir)/lib/libstderr.la
+4_2_SOURCES =4_2.c
+4_2_LDADD = $(top_builddir)/lib/libstderr.la
+4_3_SOURCES =4_3.c
+4_3_LDADD = $(top_builddir)/lib/libstderr.la
+4_4_SOURCES =4_4.c
+4_4_LDADD = $(top_builddir)/lib/libstderr.la
+4_5_SOURCES =4_5.c
+4_5_LDADD = $(top_builddir)/lib/libstderr.la
+4_6_SOURCES =4_6.c
+4_6_LDADD = $(top_builddir)/lib/libstderr.la
+4_7_SOURCES =4_7.c
+4_7_LDADD = $(top_builddir)/lib/libstderr.la
+4_8_SOURCES =4_8.c
+4_8_LDADD = $(top_builddir)/lib/libstderr.la
+4_9_SOURCES =4_9.c
+4_9_LDADD = $(top_builddir)/lib/libstderr.la

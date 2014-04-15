@@ -26,5 +26,7 @@ libtool
 ltmain.sh
 
 *.o
-lib/.deps/*
-lib/.libs/*
+/lib/.deps/
+/lib/.libs/
+src/01/.libs/
+build/

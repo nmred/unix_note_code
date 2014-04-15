@@ -1,0 +1,22 @@
+#!/bin/sh
+
+FILE_ARR=`ls $1 |grep -E '[0-9]{1,4}_[0-9]{1,2}.c'`
+
+BIN_LIST="bin_PROGRAMS ="
+OUT_PUT_NAME="$1/Makefile.am"
+for filename in $FILE_ARR;do
+	FILE_BIN=`echo $filename|cut -d . -f 1`
+	BIN_LIST="$BIN_LIST $FILE_BIN"
+done
+
+echo "" > $OUT_PUT_NAME
+OUT_PUT="INCLUDES = -I \$(top_builddir)/include"
+echo $OUT_PUT >> $OUT_PUT_NAME
+echo $BIN_LIST >> $OUT_PUT_NAME
+for filename in $FILE_ARR;do
+	FILE_BIN=`echo $filename|cut -d . -f 1`
+	SOURCE=$FILE_BIN"_SOURCES ="$filename 
+	echo $SOURCE >> $OUT_PUT_NAME
+	LADD=$FILE_BIN"_LDADD = \$(top_builddir)/lib/libstderr.la"
+	echo $LADD >> $OUT_PUT_NAME
+done
