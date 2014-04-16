@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILE_ARR=`ls $1 |grep -E '[0-9]{1,4}_[0-9]{1,2}.c'`
+FILE_ARR=`ls $1 |grep -E '[0-9]{1,2}_[0-9]{1,2}.c'`
 
 BIN_LIST="bin_PROGRAMS ="
 OUT_PUT_NAME="$1/Makefile.am"

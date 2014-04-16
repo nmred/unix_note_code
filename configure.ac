@@ -30,5 +30,6 @@ AC_CONFIG_FILES([Makefile
                  src/06/Makefile
                  src/07/Makefile
                  src/08/Makefile
+                 src/10/Makefile
 				 ])
 AC_OUTPUT
